@@ -1,6 +1,6 @@
 import loadStyles from './styles';
 import gjs from 'grapesjs';
-const g = grapesjs || gjs;
+const g = window.grapesjs || gjs;
 
 export default g.plugins.add('gjs-style-gradient', (editor, opts = {}) => {
   let defaults = {
